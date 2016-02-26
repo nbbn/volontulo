@@ -263,6 +263,15 @@ def contact_form(request):
         }
     )
 
+def office_info(request):
+    u"""View responsible for office hours.
+
+    :param request: WSGIRequest instance
+    """
+    return render(
+        request,
+        "office_info.html"
+    )
 
 def page_not_found(request):
     u"""Page not found - 404 error handler.
